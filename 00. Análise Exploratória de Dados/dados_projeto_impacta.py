@@ -106,7 +106,5 @@ Despesas_total [icon: file-text, color: blue]{
 }
 // fim da tabela
 Despesas_total.id > Deputados.id
-      
-print(total)
 
 finalDF = total.to_excel('finaldata.xlsx')
