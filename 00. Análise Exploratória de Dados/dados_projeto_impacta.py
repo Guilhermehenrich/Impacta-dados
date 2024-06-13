@@ -81,7 +81,32 @@ gastos_deputados = gastos_deputados.sort_values('valorDocumento', ascending=Fals
 gastos_deputados.head(10)
 
 gastos_deputados.tail(10)
+print(total)
 
+
+title Deputados e despesas
+Deputados [icon: user, color: yellow]{
+  id string pk
+  Nome string
+  siglaPartido string
+  siglaUf string
+  idLegislatura string
+  UrlFoto string
+}
+
+Despesas_total [icon: file-text, color: blue]{
+  id string pk
+  Ano integer
+  Mês integer
+  Categoria string
+  TipoDocumento string
+  ValorDocumento float
+  ValorLiquido float
+  NomeFornecedor string
+}
+// fim da tabela
+Despesas_total.id > Deputados.id
+      
 print(total)
 
 finalDF = total.to_excel('finaldata.xlsx')
